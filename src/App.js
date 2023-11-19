@@ -1,8 +1,11 @@
 import './App.css';
+import Nav from './components/Nav';
 
 const App = () => {
   return (
-    <main className="bg">hi</main>
+    <main>
+      <Nav />
+    </main>
   );
 }
 
