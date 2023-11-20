@@ -1,4 +1,9 @@
 /* #1821E8 */
+.app {
+  height: 100vh;
+  display: flex;
+}
+
 ul {
   list-style-type: none;
   display: flex;
@@ -6,66 +11,29 @@ ul {
 
 /* NAVBAR */
 
-.nav {
-  height: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.navbar {
+  height: 100%;
+  min-width: 15%;
+  padding: 2rem;
 }
 
-.nav--content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.list {
-  height: 2rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav > div {
-  width:  40%;
-}
-
-.nav--item {
-  margin: 5px;
-  transition: 400ms all;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
-}
-
-.nav--item > a {
-  width: 100%;
+.navbar--list  {
   height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  gap: 3rem;
 }
 
-.nav--item:hover {
+.navbar--list__item > div {
+  transition: 400ms all;
+  opacity: 0.6;
+}
+
+.navbar--list__item:hover {
   cursor: pointer;
-  background-color: #6d73e9;
   border-radius: 5px;
   color: #fff;
-}
-
-.nav--division {
-  width: 100%;
-  height: 2px;
-  background-color: #6d73e9;
-}
-
-.division {
-  height: 60%;
-  width: 2px;
-  background-color: #6d73e9;
 }
 
 /* NAVBAR */
@@ -73,15 +41,17 @@ ul {
 /* HOME */
 
 .main {
-  padding: 4rem;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main--text {
   font-weight: 700;
-  padding: 0rem 4rem;
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
   text-align: center;
 }
 

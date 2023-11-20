@@ -4,7 +4,7 @@ import Home from './components/Home';
 
 const App = () => {
   return (
-    <main>
+    <main className='app'>
       <Nav />
       <Home />
     </main>
