@@ -1,10 +1,7 @@
-import { useState } from "react";
-
-const Nav = () => {
-  const [active, setActive] = useState("lorem1");
-
+const Nav = ({ active, setActive }) => {
   const style = {
-    fontSize: "1.6rem",
+    fontSize: "1.4rem",
+    fontWeight: "700",
     opacity: "1"
   }
 
@@ -13,34 +10,34 @@ const Nav = () => {
       <ul className="navbar--list">
         <li className="navbar--list__item">
           <div
-            onClick={() => setActive("lorem1")}
-            style={active == "lorem1" ? style : {}}
+            onClick={() => setActive("home")}
+            style={active == "home" ? style : {}}
           >
-            • lorem
+            Home
           </div>
         </li>
         <li className="navbar--list__item">
           <div
-            onClick={() => setActive("lorem2")}
-            style={active == "lorem2" ? style : {}}
+            onClick={() => setActive("about")}
+            style={active == "about" ? style : {}}
           >
-          • lorem
+          About
           </div>
         </li>
         <li className="navbar--list__item">
           <div
-            onClick={() => setActive("lorem3")}
-            style={active == "lorem3" ? style : {}}
+            onClick={() => setActive("projects")}
+            style={active == "projects" ? style : {}}
           >
-          • lorem
+          Projects
           </div>
         </li>
         <li className="navbar--list__item">
           <div
-            onClick={() => setActive("lorem4")}
-            style={active == "lorem4" ? style : {}}
+            onClick={() => setActive("connect")}
+            style={active == "connect" ? style : {}}
           >
-          • lorem
+          Connect
           </div>
         </li>
       </ul>
