@@ -7,6 +7,7 @@ const App = () => {
 
   return (
     <main className='app'>
+      <Nav />
       <Home />
     </main>
   );
