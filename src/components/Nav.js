@@ -1,5 +1,5 @@
 import ListMobile from "./ListMobile";
-import { routes } from "../routes";
+import { routes } from "../assets/routes";
 
 const Nav = () => {
   return (
@@ -16,7 +16,7 @@ const Nav = () => {
               <li>
                 <a
                   href={href}
-                  className="h-full flex items-center justify-center hover:text-[#ffffff] transition-all duration-300 lg:text-lg"
+                  className="h-full flex items-center justify-center hover:text-white transition-all duration-300 lg:text-lg"
                 >
                   <span className="h-full text-[#6D73E9]">#</span>
                   <div className="h-full">{title}</div>
