@@ -3,7 +3,7 @@ import { routes } from "../assets/routes";
 
 const Nav = () => {
   return (
-    <nav className="absolute top-0 left-0 w-full p-4 md:py-8 md:px-12 flex items-center justify-between">
+    <nav className="fixed bg-[#282C33] top-0 left-0 w-full p-4 md:py-8 md:px-12 flex items-center justify-between">
       <div className="lg:text-xl">
         <a href='/'>Vansh</a>
       </div>

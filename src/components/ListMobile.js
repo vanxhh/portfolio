@@ -21,9 +21,9 @@ const ListMobile = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed left-0 right-0 p-4 bg-[#282C33] z-50 h-full"
+            className="fixed left-0 right-0 p-4 md:pt-8 md:px-12 bg-[#282C33] z-50 h-full"
           >
-            <ul className="grid gap-2">
+            <ul className="pt-12 w-full flex flex-col justify-center gap-12">
               {routes.map((route, idx) => {
 
                 return (
@@ -42,11 +42,11 @@ const ListMobile = () => {
                     <a
                       onClick={() => setOpen((prev) => !prev)}
                       className={
-                        "flex items-center justify-between w-full rounded-xl"
+                        "flex items-center justify-between"
                       }
                       href={route.href}
                     >
-                      <div className="flex gap-1 text-lg">
+                      <div className="flex gap-1 md:text-lg">
                         <span className="text-[#6D73E9]">#</span>
                         {route.title}
                       </div>

@@ -4,17 +4,48 @@ import Github from "../assets/Github";
 const Home = () => {
   return (
     <main className="p-4 md:pt-8 pb-28 md:px-12">
-      <section className="h-screen flex flex-col justify-center">
-        <p className="text-2xl md:text-3xl lg:text-4xl">
-          Hi, I am
-          <div className="pt-2 text-[#6D73E9] font-bold">Vansh Bhardwaj</div>
-        </p>
-        <p className="pt-4 md:pt-6 text-base md:text-xl text-[#ABB2BF]">
-          I specialize in Full-Stack application development and UI designing.
-        </p>
-        <div className="mt-8 w-36 h-12 md:text-lg md:w-40 flex items-center justify-center border-2 rounded-md border-[#6D73E9] hover:bg-[#6D73E9] cursor-pointer transition-all duration-300">
-          <a href="/connect">Contact Me!</a>
+      <section className="h-screen flex justify-between items-center">
+        <div className="flex flex-col justify-center">
+          <p className="text-2xl md:text-3xl lg:text-4xl">
+            Hi, I am
+            <div className="pt-2 text-[#6D73E9] font-bold">Vansh Bhardwaj</div>
+          </p>
+          <p className="pt-4 md:pt-6 text-base md:text-xl text-[#ABB2BF]">
+            I specialize in Full-Stack application development and UI designing.
+          </p>
+          <div className="mt-8 w-36 h-12 md:text-lg md:w-40 flex items-center justify-center border-2 rounded-md border-[#6D73E9] hover:bg-[#6D73E9] cursor-pointer transition-all duration-300">
+            <a href="/connect">Contact Me!</a>
+          </div>
         </div>
+        <svg
+          width="10rem"
+          height="10rem"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="hidden lg:flex"
+        >
+          <path
+            d="M7 8L3 12L7 16"
+            stroke="#6D73E9"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17 8L21 12L17 16"
+            stroke="#6D73E9"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14 4L9.8589 19.4548"
+            stroke="#6D73E9"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
       </section>
 
       <section>
